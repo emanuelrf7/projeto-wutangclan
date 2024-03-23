@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --fonte-padrao: "Open Sans", sans-serif;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: var(--fonte-padrao);
+}
+
+body {
+    background-color: #FFC322;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#cabecalho {
+    position: relative;
+}
+
+#banner {
+    width: 100%;
+}
+
+#container-titulo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#logo {
+    max-width: 125px;
+}
+
+#biografia {
+    text-align: center;
+    padding: 10px;    
+}
+
+#biografia > h2 {
+    color: white;
+    font-weight: bold;
+    border-top: 1px solid white;
+}
+
+#biografia > p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: justify;
+    color: black;
+}
+
+#discografia {
+    display: flex;
+    flex-direction: column; 
+}
+
+.albums {
+    text-align: center;
+}
+
+.albums > p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: justify;
+}
+
+#media {
+    text-align: center;
+    padding: 10px;
+}
+
+#media > h2 {
+    border-top: 1px solid white;
+    margin-bottom: 15px;
+    color: white;
+}
+
+#datas-turne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#datas-turne > h2 {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-top: 1px solid white;
+}
+
+#botao-turne {
+    background-color: #FFA921;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#botao-turne:hover {
+    color: black;
+}
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contato h2 {
+    color: white;
+    margin-top: 20px;
+    border-top: 1px solid white;
+}
+
+#container-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    margin-top: 10px;
+    color: white;
+}
+
+#container-formulario > form > div > label {
+    width: 150px;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#rodape h2 {
+    color: white;
+    border-top: 1px solid white;
+}
+
+#redes-sociais {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#redes-sociais div {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#cor-insta, #cor-x, #cor-tiktok, #cor-spotify {
+    margin: 15px;
+}
+
+#cor-insta:hover {
+    background-image: linear-gradient(to bottom, #AA08F1, #FF016D, #FFAD00);
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: .2s;
+}
+
+#cor-x:hover {
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+#cor-tiktok:hover {
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px 20px;    
+}
+
+#cor-spotify:hover {
+    background-color: #25D865;
+    border-radius: 5px;
+    padding: 10px 20px;    
+}
