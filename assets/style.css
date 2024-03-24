@@ -22,12 +22,17 @@ a {
     font-weight: bold;
 }
 
+a:hover {
+    color: #FFFA21;
+}
+
 #cabecalho {
     position: relative;
 }
 
 #banner {
     width: 100%;
+    height: 350px;
 }
 
 #container-titulo {
@@ -46,7 +51,7 @@ a {
     padding: 10px;    
 }
 
-#biografia > h2 {
+#biografia > h1 {
     color: white;
     font-weight: bold;
     border-top: 1px solid white;
@@ -64,11 +69,19 @@ a {
     flex-direction: column; 
 }
 
-.albums {
+#discografia > h2 {
+    color: white;
+    font-weight: bold;
+    border-top: 1px solid white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#albums {
     text-align: center;
 }
 
-.albums > p {
+#albums > p {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 15px;
@@ -109,7 +122,7 @@ a {
 }
 
 #botao-turne:hover {
-    color: black;
+    color: #FFFA21;
 }
 
 #contato {
@@ -147,7 +160,7 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 #rodape h2 {
@@ -158,6 +171,10 @@ a {
 #redes-sociais {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+#redes-sociais a:hover {
+    color: white;
 }
 
 #redes-sociais div {
@@ -192,4 +209,101 @@ a {
     background-color: #25D865;
     border-radius: 5px;
     padding: 10px 20px;    
+}
+
+/* Telas médias */
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    #banner {
+        height: 430px;
+    }
+
+    #albums {
+        text-align: center;
+    }
+    
+    #albums > p {
+        text-align: center;
+    }
+
+    #container-turne-contato {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border-top: 1px solid white;
+    }
+
+    #datas-turne > h2 {
+        border: none;
+    }
+
+    #contato > h2 {
+        border: none;
+    }
+
+    #redes-sociais a {
+        font-size: 1.2em;
+    }
+}
+
+/* Telas Grandes */
+
+@media screen and (min-width: 992px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    #logo {
+        max-width: 150px;
+    }
+
+    #albums {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #albums img {
+        width: 350px;
+    }
+
+    #albums > p {
+        text-align: justify;
+    }
+
+    #redes-sociais a {
+        font-size: 1.5em;
+    }
+}
+
+/* Telas Muito Grandes */
+
+@media screen and (min-width: 1886px) {
+    #logo {
+        max-width: 180px;
+    }
+    
+    #albums {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
 }
